@@ -179,15 +179,16 @@ padding-top: 10px;
 margin-left: 5px;
 }
 
-.cvku {
+.cv {
 display: flex;
 justify-content: center; 
-align-items: center;    
+align-items: center;   
+text-align: center; 
 padding-top: 9px;
 margin-right: 9px;
 }
 
-.btn{
+.btn {
   display: inline-block;
   padding: 1rem 2.8rem;
   background-color: rgb(15, 49, 70);
