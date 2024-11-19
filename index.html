@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo1">BTG</a>
+
+        <nav>
+                <a href="#" >Home</a>
+                <a href="#" >Project</a>
+                <a href="#" >Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Bintang</span></h1>
+            <div class="info">
+            <div class="teks">Nama: <span class="bio">Bintang My Heart</span></div>
+            <div class="teks">Profil: <span class="bio">Fullstack Web Dev</span></div>
+            <div class="teks">Email: <span class="bio">bintangmyheart65@gmail.com</span></div>
+            <div class="teks">Phone: <span class="bio">082146769617</span></div>
+            </div>
+            <p class="tentang">Nama Saya Bintang My Heart. Saya tinggal di Desa Begawan Pandansari Lor, Jabung, Malang.
+                Saya siswa dari SMKN12 Malang kelas 11 PPLG2. Saya cukup bisa dalam penerapan HTML, CSS, Bootstrap, dan Javascript.</p>
+  <div class="judul"><span><h2>Project</h2></span></div>
+  <div class="slideshow-container">
+    <div class="mySlides">
+      <div class="text">Web susu</div>
+      <img src="2.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="text">Web bendera</div>
+      <img src="3.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="text">Web to do list</div>
+      <img src="4.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="text">Web sabun</div>
+      <img src="5.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    
+    <div class="logo2">
+    <div class="icons">
+        <a href="https://wa.me/082146769617" target="_blank" class="active">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="https://github.com/bintangmh" target="_blank">
+          <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/bintaangmh?igsh=MW43a2dmOXIydWx6dw==" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+      </a>
+  </div>
+  </div>
+  <div class="cv">
+  <a href="https://www.canva.com/design/DAGWVwOXqw8/1zMacHMB53WPWkB6r-Wqow/view?utm_content=DAGWVwOXqw8&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="blank" class="btn">Open My CV</a>
+</div>
+</div>
+    </section>
+    <script>
+      let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+</body>
+</html>
